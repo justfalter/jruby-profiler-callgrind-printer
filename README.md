@@ -2,12 +2,11 @@
 
 ## Summary
 
-This gem provides the similar functionality to that of [ruby-prof](https://github.com/ruby-prof/ruby-prof)'s [RubyProf::CallTreePrinter](https://github.com/ruby-prof/ruby-prof/blob/master/lib/ruby-prof/printers/call_tree_printer.rb), but for the JRuby's Profiler. Specifically, JRuby::Profiler::CallgrindPrinter will produce 'callgrind' formatted output for analysis in any tool that understands Valgrind's 'callgrind' file format, such as KCacheGrind and QCacheGrind.
+This gem allows for the printing of JRuby Profiler results in 'callgrind' (sometimes called 'calltree') format. This functionality is similar to that of [ruby-prof](https://github.com/ruby-prof/ruby-prof)'s [RubyProf::CallTreePrinter](https://github.com/ruby-prof/ruby-prof/blob/master/lib/ruby-prof/printers/call_tree_printer.rb), but for the JRuby's Profiler. Specifically, JRuby::Profiler::CallgrindPrinter will produce 'callgrind' formatted output for analysis in any tool that understands Valgrind's 'callgrind' file format, such as KCacheGrind and QCacheGrind.
 
 CallgrindPrinter has been written in pure-ruby, as opposed to Java, simply to see if it was possible (and it was). 
 
 ## Usage
-
 
 For a runnable example, see examples/example1.rb. 
 
@@ -35,6 +34,8 @@ The jruby profiler is disabled by default. You *must* run jruby with the '--prof
 
 If you don't enable the profiler, everything will run fine, but it will seem as though no data is being gathered, and somewhat empty outputs will be produced. 
 
+
+## References
 
 * [Callgrind Format Specification](http://valgrind.org/docs/manual/cl-format.html)
 
