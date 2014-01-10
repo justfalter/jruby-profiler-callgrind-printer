@@ -1,0 +1,42 @@
+events: process_time
+
+fl=(jruby_runtime)
+fn=Fixnum#<=>
+0 8766488
+
+fl=example1.rb
+fn=Object#fibonacci
+8 256712
+cfl=example1.rb
+cfn=Object#fibonacci
+calls=57270 8
+8 0
+cfl=(jruby_runtime)
+cfn=Range#include?
+calls=57291 0
+0 51924983
+
+fl=(jruby_runtime)
+fn=Range#include?
+0 43158495
+cfl=(jruby_runtime)
+cfn=Fixnum#<=>
+calls=114582 0
+0 8766488
+
+fl=(jruby_runtime)
+fn=Integer#upto
+0 248929
+cfl=example1.rb
+cfn=Object#fibonacci
+calls=21 8
+8 114585076
+
+fl=(jruby_runtime)
+fn=(top)
+0 0
+cfl=(jruby_runtime)
+cfn=Integer#upto
+calls=1 0
+0 114834005
+
