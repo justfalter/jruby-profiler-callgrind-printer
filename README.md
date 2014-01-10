@@ -6,6 +6,13 @@ This gem allows for the printing of JRuby Profiler results in 'callgrind' (somet
 
 CallgrindPrinter has been written in pure-ruby, as opposed to Java, simply to see if it was possible (and it was). 
 
+## Installation
+
+Requires JRuby 1.6 or newer, though I've only tested it on JRuby 1.7.9. 
+```
+gem install jruby-profiler-callgrind-printer
+```
+
 ## Usage
 
 For a runnable example, see examples/example1.rb. 
@@ -34,6 +41,9 @@ The jruby profiler is disabled by default. You *must* run jruby with the '--prof
 
 If you don't enable the profiler, everything will run fine, but it will seem as though no data is being gathered, and somewhat empty outputs will be produced. 
 
+## Todo
+
+* Specs :)
 
 ## References
 
