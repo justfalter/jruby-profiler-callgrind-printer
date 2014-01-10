@@ -48,6 +48,7 @@ If you don't enable the profiler, everything will run fine, but it will seem as 
 ## References
 
 * [Callgrind Format Specification](http://valgrind.org/docs/manual/cl-format.html)
+* [Profiling-jruby](https://github.com/jruby/jruby/wiki/Profiling-jruby)
 
 
 
